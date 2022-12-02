@@ -1,0 +1,58 @@
+{
+    "name": "Quran Radio",
+    "description": "Quran Userbot",
+    "logo": "https://telegra.ph//file/e6c436119761b7159cadd.jpg",
+    "keywords": [
+        "py-tgcalls",
+        "pyrogram"
+    ],
+    "website": "http://Quranvc.co",
+    "repository": "https://github.com/JoeDev/Quran",
+    "success_url": "https://t.me/ElQuranCall",
+    "env": {
+        "API_ID": {
+            "description": "Your Api-Id",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your Api-Hash",
+            "required": true,
+            "value": ""
+        },
+        "SESSION": {
+            "description": "Your Pyrogram 2.0 Session ",
+            "required": true,
+            "value": ""
+        },
+        "CHAT_ID": {
+            "description": "Chat Id",
+            "required": true,
+            "value": "-1001853885166"
+        },
+        "LINK": {
+            "description": "Youtube Link Video",
+            "required": true,
+            "value": "https://youtu.be/Spyc-izypAQ"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
